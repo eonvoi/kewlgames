@@ -8,6 +8,16 @@ function openFullscreen() {
   }
 }
 
+function home()
+{
+  let a = 'http://' + document.location.host;
+  if (a.includes("github.io"))
+  {
+    a += "/kewlgames/";
+  }
+  document.location = a;
+}
+
 const playerContainer = document.getElementsByClassName("player-container")[0];
 const authorLabel = document.getElementById("author")
 
