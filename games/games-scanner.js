@@ -61,7 +61,8 @@ async function createGameDiv(name, url, developer) {
         }
     };
 
-    gameDiv.style.background = `url("games/thumbnails/` + name + `.jpg")`;
+    const safeName = name.replace(":", ".")
+    gameDiv.style.background = `url("games/thumbnails/` + safeName + `.jpg")`;
     return gameDiv;
 }
 
