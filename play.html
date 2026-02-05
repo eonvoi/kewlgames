@@ -9,6 +9,17 @@
 
 <body>
     <header>
+        <script>
+            function home()
+{
+  let a = 'http://' + document.location.host;
+  if (a.includes("github.io"))
+  {
+    a += "/kewlgames/";
+  }
+  document.location = a;
+}
+        </script>
         <div class="logo" style="cursor:pointer" onclick="home()"></div>
     </header>
     <div class="player-container">
