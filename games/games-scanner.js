@@ -191,7 +191,7 @@ function downloadWholeCurrentPage() {
 }
 
 function updatePlaymodeButtonBasedOnCookie() {
-    const playerEnabledCookieValue = getCookie("playerEnabled");
+    let playerEnabledCookieValue = getCookie("playerEnabled");
     if (playerEnabledCookieValue != "True" && playerEnabledCookieValue != "False") {
         playerEnabledCookieValue = "True";
         setCookie("playerEnabled", playerEnabledCookieValue);
